@@ -42,6 +42,8 @@ The basic procedure was:
 10. Observe results, execution should stop on the first breakpoint.
 11. Repeat until all versions have been tested.
 
+**NOTE:** Visual Studio Code will not operate with Node.js < v8.x
+
 ### Files
 
 **`app.js`** or **`index.js`**
