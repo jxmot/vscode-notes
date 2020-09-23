@@ -30,9 +30,9 @@ Visual Studio Code Versions: versions were not installed concurrently
 
 The basic procedure was:
 
-1. Use `nvm` to install and use the necessary versions of Node.js
+1. Use `nvm` to install and/or use the necessary versions of Node.js
 2. Uninstall Visual Studio Code if present.
-3. Install Visual Studio Code. Start with the most recent version.
+3. Install Visual Studio Code. Start with the most recent version, and decrement through the versions on each pass through these steps.
 4. Select and use a Node.js version
 5. In an appropriate folder create an `app.js` or `index.js` file.
 6. Execute `npm init`, follow prompts.
@@ -40,6 +40,7 @@ The basic procedure was:
 8. Set 1 or more breakpoints.
 9. Run.
 10. Observe results, execution should stop on the first breakpoint.
+11. Repeat until all versions have been tested.
 
 ### Files
 
@@ -106,7 +107,7 @@ You will get 2 launch options, **Launch workspaceFolder** and **Launch workspace
 * 8.9.0   **FAIL**
 * 6.10.2  **FAIL**
 
-In all failed tests the application starting was attempted, however no output was seen on the console.
+In all failed tests running the application was attempted, however no output was seen on the console.
 
 **v1.29.1**
 
@@ -118,7 +119,7 @@ In all failed tests the application starting was attempted, however no output wa
 * 8.9.0   **FAIL**
 * 6.10.2  **FAIL**
 
-In all failed tests the application starting was attempted, however no output was seen on the console.
+In all failed tests running the application was attempted, however no output was seen on the console.
 
 **v1.20.1**
 
@@ -130,9 +131,9 @@ In all failed tests the application starting was attempted, however no output wa
 * 8.9.0   **OK**
 * 6.10.2  **OK**
 
-In all failed tests the application starting was attempted, however no output was seen on the console.
+In all failed tests running the application was attempted, however no output was seen on the console.
 
-In all passing tests the application was started and it ran until completion. Output was seen on the console and break points were triggered.
+In all passing tests the application was started and it ran until the first breakpoint. Output was seen on the console and break points were triggered.
 
 **v1.13**
 
@@ -144,7 +145,7 @@ In all passing tests the application was started and it ran until completion. Ou
 * 8.9.0   **OK**
 * 6.10.2  **OK**
 
-In all failed tests the application starting was attempted, however no output was seen on the console.
+In all failed tests running the application was attempted, however no output was seen on the console.
 
-In all passing tests the application was started and it ran until completion. Output was seen on the console and break points were triggered.
+In all passing tests the application was started and it ran until the first breakpoint. Output was seen on the console and break points were triggered.
 
